@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+        </head>
+
+        <body>
+        <form action="script.php" enctype="multipart/form-data">
+            Введите какой-нибудь текст:<br>
+            <input type="text" name="textField" required="required">
+            <select name="list">
+                <option value=""></option>
+                <option value="1 элемент">Первый</option>
+                <option value="2 элемент">Второй</option>
+                <option value="3 элемент">Третий</option>
+                <option value="4 элемент">Четвертый</option>
+            </select>
+            <br><br>
+            При отправке формы методом POST, вы можете прикрепить файл:<br>
+            <input type="file" name="userFile">
+            <br><br>
+            <button type="submit" formmethod="POST">Отправить форму методом POST</button><br><br>
+            <button type="submit" formmethod="GET">Отправить форму методом GET</button>
+            </form>
+        </body>
+    </html>
